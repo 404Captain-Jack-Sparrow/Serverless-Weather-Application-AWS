@@ -73,11 +73,11 @@ Set these in **Lambda → Configuration → Environment variables**:
    - Endpoint: your email address
 5. Confirm the subscription by clicking the link in the email you receive.
 
-![Create SNS subscription](screenshots/01-sns-create-subscription.png)
+![Create SNS subscription](images/01-sns-create-subscription.png)
 
 After confirming, the subscription status shows **Confirmed**:
 
-![SNS subscription confirmed](screenshots/05-sns-subscription-confirmed.png)
+![SNS subscription confirmed](images/05-sns-subscription-confirmed.png)
 
 ---
 
@@ -88,11 +88,11 @@ After confirming, the subscription status shows **Confirmed**:
 3. Runtime: **Python 3.x**
 4. Under **Additional configurations**, enable **Custom execution role** and create/select a role.
 
-![Lambda execution role](screenshots/02-lambda-execution-role.png)
+![Lambda execution role](images/02-lambda-execution-role.png)
 
 5. Click **Create function**.
 
-![Lambda function created](screenshots/03-lambda-function-created.png)
+![Lambda function created](images/03-lambda-function-created.png)
 
 6. Add the permission to publish to SNS. Attach an inline policy to the execution role:
 
@@ -222,7 +222,7 @@ def lambda_handler(event, context):
 3. Click **Test**.
 4. Check your email for the SNS notification.
 
-![Lambda test succeeded](screenshots/04-lambda-test-success.png)
+![Lambda test succeeded](images/04-lambda-test-success.png)
 
 ---
 
